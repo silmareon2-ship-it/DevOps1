@@ -1,21 +1,20 @@
-name: Ci project
+name: Silmaril
 
 on:
   push:
-    branches: [ develop, main ]
-  pull_request:
-    branches: [ develop, main ] 
-
-jobs: 
-  Hellow_World:
+    branches: [ main, develop ]
+    pull_request: [ main, develop ]
+    
+jobs:
+  Silmaril:
     runs-on: ubuntu-latest
 
-    steps:
-     - name: Checkout code
-       uses: actions/checkout@v3
+steps:
+  - name: chechout code
+    uses: actions/checkout@v3
 
-     - name: Say Hi
-       run: echo "hi silmaril"
+  - name: pwd
+    run: pwd
 
-     - name: Show date
-       run: date
+  - name: date
+    run: date
