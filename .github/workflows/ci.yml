@@ -9,12 +9,12 @@ jobs:
   Silmaril:
     runs-on: ubuntu-latest
 
-steps:
-  - name: chechout code
-    uses: actions/checkout@v3
+    steps:
+    - name: chechout code
+      uses: actions/checkout@v3
 
-  - name: pwd
-    run: pwd
+    - name: pwd
+      run: pwd
 
-  - name: date
-    run: date
+    - name: date
+      run: date
