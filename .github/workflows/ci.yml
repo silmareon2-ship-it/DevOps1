@@ -7,7 +7,7 @@ on:
     branches: [ main, develop ]
 
 
-job:
+jobs:
   hellow_world:
     runs-on: ubuntu-latest
 
